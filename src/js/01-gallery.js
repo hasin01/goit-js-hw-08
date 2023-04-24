@@ -1,7 +1,7 @@
-import "simplelightbox/dist/simple-lightbox.min.css";
-import SimpleLightbox from "simplelightbox";
-import { galleryItems } from "./gallery-items.js";
-const galleryEl = document.querySelector(".gallery");
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import SimpleLightbox from 'simplelightbox';
+import { galleryItems } from './gallery-items.js';
+const galleryEl = document.querySelector('.gallery');
 
 const makeGalleryItem = ({ preview, original, description }) => {
   return `
@@ -12,14 +12,14 @@ const makeGalleryItem = ({ preview, original, description }) => {
     </li>`;
 };
 const galleryPhotosArr = galleryItems
-  .map((photo) => {
+  .map(photo => {
     return makeGalleryItem(photo);
   })
-  .join("");
+  .join('');
 
-galleryEl.insertAdjacentHTML("beforeend", galleryPhotosArr);
+galleryEl.insertAdjacentHTML('beforeend', galleryPhotosArr);
 
-const lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "alt",
-  captionDelay: "250",
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: '250',
 });
