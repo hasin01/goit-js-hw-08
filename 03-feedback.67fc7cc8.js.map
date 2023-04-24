@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,QAAQC,IAAI,UACZD,QAAQC,IAAI,UACZD,QAAQC,IAAI","sources":["src/js/03-feedback.js"],"sourcesContent":["console.log(\"object\");\nconsole.log(\"object\");\nconsole.log(\"object\");\n"],"names":["console","log"],"version":3,"file":"03-feedback.67fc7cc8.js.map"}
